@@ -7,6 +7,5 @@ Code will be released soon
 
 Figure 1. An illustration of the stereo attention module.
 ## Results
-## Overview
 <img src=https://github.com/XinyiYing/SAM/blob/master/images/compare.png>
 Figure 2. Qualitative results achieved by different SISR methods with/without SAMs for 4× SR.
