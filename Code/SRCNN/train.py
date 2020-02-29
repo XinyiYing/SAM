@@ -15,7 +15,7 @@ from skimage import measure
 parser = argparse.ArgumentParser(description="PyTorch SRCNN")
 parser.add_argument("--batchSize", type=int, default=10, help="Training batch size")
 parser.add_argument("--nEpochs", type=int, default=30, help="Number of epochs to train for")
-parser.add_argument("--lr", type=float, default=4e-4, help="Learning Rate. Default=0.1")
+parser.add_argument("--lr", type=float, default=2e-4, help="Learning Rate. Default=0.1")
 parser.add_argument('--gamma', type=float, default=0.5, help='Learning Rate decay')
 parser.add_argument("--step", type=int, default=10, help="Sets the learning rate to the initial LR decayed by momentum every n epochs, Default: n=10")
 parser.add_argument("--cuda", action="store_false", help="Use cuda?")
