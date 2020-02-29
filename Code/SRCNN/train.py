@@ -155,7 +155,7 @@ def valid(Dataset,  model):
             input_r = input_r.cuda()
             target = target.cuda()
 
-        HR, _, _ = model(input_l, input_r)
+        HR, _, _, _ = model(input_l, input_r)
 
         PSNR = cal_psnr(target, HR)
         psnr_epoch = psnr_epoch + PSNR
