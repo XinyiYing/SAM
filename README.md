@@ -1,5 +1,5 @@
 # A Stereo Attention Module for Stereo Image Super-Resolution
-Pytorch implementation of "[A Stereo Attention Module for Stereo Image Super-Resolution](https://ieeexplore-ieee-org-s.nudtproxy.yitlink.com/document/8998204)", SPL 2020
+Pytorch implementation of "[A Stereo Attention Module for Stereo Image Super-Resolution](https://ieeexplore.ieee.org/document/8998204)", SPL 2020
 
 Code will be released soon
 ## Overview
