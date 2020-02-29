@@ -16,8 +16,8 @@ from SR_DenseNet import Net
 from SR_DenseNet_SAM import Net_SAM
 
 parser = argparse.ArgumentParser(description="Pytorch SRDenseNet Eval")
-parser.add_argument("--model", type=str, default="../best_model/SRDenseNet/SRDenseNet.pth", help="model path")
-parser.add_argument("--model_sam", type=str, default="../best_model/SRDenseNet/SRDenseNet_SAM1.pth", help="model_sam path")
+parser.add_argument("--model", type=str, default="../ckpt/SRDenseNet/SRDenseNet.pth", help="model path")
+parser.add_argument("--model_sam", type=str, default="../ckpt/SRDenseNet/SRDenseNet_SAM1.pth", help="model_sam path")
 parser.add_argument("--cuda", action="store_true", help="use cuda?")
 parser.add_argument("--scale", type=str, default=4, help="upscale factor")
 parser.add_argument('--testset_dir', type=str, default='../data/test', help="path of testset")
