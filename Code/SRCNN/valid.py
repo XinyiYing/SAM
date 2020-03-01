@@ -14,11 +14,11 @@ import sys
 sys.setrecursionlimit(1000000)
 
 parser = argparse.ArgumentParser(description="Pytorch SRCNN Eval")
-parser.add_argument("--model", type=str, default="../ckpt/SRCNN/SRCNN_x2.pth", help="model path")
-parser.add_argument("--model_sam", type=str, default="../ckpt/SRCNN/SRCNN_SAM_x2.pth", help="model_sam path")
+parser.add_argument("--model", type=str, default="../../ckpt/SRCNN/SRCNN_x2.pth", help="model path")
+parser.add_argument("--model_sam", type=str, default="../../ckpt/SRCNN/SRCNN_SAM_x2.pth", help="model_sam path")
 parser.add_argument("--scale", type=str, default=2, help="upscale factor")
 parser.add_argument("--cuda", action="store_true", help="use cuda?")
-parser.add_argument('--testset_dir', type=str, default='../data/test')
+parser.add_argument('--testset_dir', type=str, default='../../data/test')
 parser.add_argument('--dataset', type=str, default='middlebury')
 parser.add_argument("--gpus", default="0", type=str, help="gpu ids (default: 0)")
 
