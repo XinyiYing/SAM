@@ -106,13 +106,12 @@ def main():
     print('Time consuming: ', wotime - oldtime)
     valid_sam(test_loader, model_sam)
     wtime = datetime.datetime.now()
-    print('Time consuming: ', wtime-wotime)
+    print('Time consuming: ', wtime - wotime)
 
 def img_transfer(img, img_y):
     img_r = img[:, 0, :, :]
     img_g = img[:, 1, :, :]
     img_b = img[:, 2, :, :]
-    # image_y = (0.257 * torch.unsqueeze(img_r, 1) + 0.504 * torch.unsqueeze(img_g, 1) + 0.098 * torch.unsqueeze(img_b,1) + 16.0 / 255)
     image_y = torch.squeeze(img_y, 1)
     image_cb = (-0.148 * img_r - 0.291 * img_g + 0.439 * img_b + 128 / 255.0)
     image_cr = (0.439 * img_r - 0.368 * img_g - 0.071 * img_b + 128 / 255.0)
