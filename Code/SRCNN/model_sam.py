@@ -91,6 +91,4 @@ def morphologic_process(mask):
         mask_np[idx,0,:,:] = buffer[3:-3,3:-3]
     mask_np = 1-mask_np
     mask_np = mask_np.astype(float)
-
-
     return torch.from_numpy(mask_np).float().to(device)
