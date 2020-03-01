@@ -21,7 +21,7 @@ parser.add_argument("--model", type=str, default="../../ckpt/LapSRN/LapSRN.pth",
 parser.add_argument("--model_sam", type=str, default="../../ckpt/LapSRN/LapSRN_SAM1.pth", help="model path")
 parser.add_argument("--cuda", action="store_false", help="use cuda?")
 parser.add_argument("--scale", type=str, default=4, help="upscale factor")
-parser.add_argument('--testset_dir', type=str, default='../data/test')
+parser.add_argument('--testset_dir', type=str, default='../../data/test')
 parser.add_argument('--dataset', type=str, default='middlebury')
 parser.add_argument("--gpus", default="0", type=str, help="gpu ids (default: 0)")
 
