@@ -18,7 +18,7 @@ parser.add_argument("--cuda", action="store_false", help="Use cuda?")
 parser.add_argument("--resume", default="", type=str, help="Path to checkpoint (default: none)")
 parser.add_argument("--start-epoch", default=1, type=int, help="Manual epoch number (useful on restarts)")
 parser.add_argument("--threads", type=int, default=1, help="Number of threads for data loader to use, Default: 1")
-parser.add_argument('--pretrained', default='../ckpt/SRDenseNet/pretrain.pth', type=str, help='path to pretrained model (default: none)')
+parser.add_argument('--pretrained', default='../../ckpt/SRDenseNet/pretrain.pth', type=str, help='path to pretrained model (default: none)')
 parser.add_argument("--gpus", default="0", type=str, help="gpu ids (default: 0)")
 parser.add_argument('--gamma', type=float, default=0.5, help='Learning rate dacay')
 
@@ -139,7 +139,7 @@ def train(training_data_loader, optimizer, model, criterion, epoch, scheduler):
         PSNR = cal_psnr(target_l, HR_l)
         psnr_epoch = psnr_epoch + PSNR
     print("===> Epoch[{}]: Loss: {:.3f} PSNR: {:.3f} ".format(epoch, loss_epoch / (iteration + 1),psnr_epoch / (iteration + 1)))
-    # valid('../data/valid', model)
+    # valid('../../data/valid', model)
 
 def valid(Dataset,  model):
     test_set = TrainSetLoader(Dataset)
