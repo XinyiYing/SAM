@@ -14,8 +14,8 @@ import sys
 sys.setrecursionlimit(1000000)
 
 parser = argparse.ArgumentParser(description="Pytorch SRCNN Eval")
-parser.add_argument("--model", type=str, default="../best_model/SRCNN/SRCNN_x2.pth", help="model path")
-parser.add_argument("--model_sam", type=str, default="../best_model/SRCNN/SRCNN_SAM_x2.pth", help="model_sam path")
+parser.add_argument("--model", type=str, default="../ckpt/SRCNN/SRCNN_x2.pth", help="model path")
+parser.add_argument("--model_sam", type=str, default="../ckpt/SRCNN/SRCNN_SAM_x2.pth", help="model_sam path")
 parser.add_argument("--scale", type=str, default=2, help="upscale factor")
 parser.add_argument("--cuda", action="store_true", help="use cuda?")
 parser.add_argument('--testset_dir', type=str, default='../data/test')
@@ -119,25 +119,8 @@ def img_transfer(img, img_y):
     image_r = (1.164 * torch.unsqueeze((image_y - 16/255), 1) + 1.596 * torch.unsqueeze((image_cr - 128/255), 1))
     image_g = (1.164 * torch.unsqueeze((image_y - 16/255), 1) - 0.392 * torch.unsqueeze((image_cb - 128/255), 1) - 0.813 * torch.unsqueeze((image_cr - 128/255), 1))
     image_b = (1.164 * torch.unsqueeze((image_y - 16/255), 1) + 2.017 * torch.unsqueeze((image_cb - 128/255), 1))
-    # R = 1.164 * (Y - 16) + 1.596 * (Cr - 128)
-    # G = 1.164 * (Y - 16) - 0.392 * (Cb - 128) - 0.813 * (Cr - 128)
-    # B = 1.164 * (Y - 16) + 2.017 * (Cb - 128)
     image = torch.cat((image_r, image_g, image_b), 1)
     return image
-
-def cal_psnr(img1, img2):
-    img1 = img1.cpu()
-    img2 = img2.cpu()
-    img1_np = np.array(img1)
-    img2_np = np.array(img2)
-    return measure.compare_psnr(img1_np, img2_np)
-
-def cal_ssim(img1, img2):
-    img1 = img1.cpu()
-    img2 = img2.cpu()
-    img1_np = np.array(img1)
-    img2_np = np.array(img2)
-    return measure.compare_ssim(img1_np, img2_np, multichannel=True)
 
 if __name__ == '__main__':
     main()
