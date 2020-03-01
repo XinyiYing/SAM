@@ -95,10 +95,6 @@ def main():
     wtime = datetime.datetime.now()
     print('Time consuming: ', wtime - wotime)
 
-def show(img):
-    img = clip(img.data.cpu(), 0, 1)
-    img = ToPILImage()(img[0,:,:,:])
-    plt.figure(), plt.imshow(img)
 
 def cal_psnr(img1, img2):
     img1 = img1.cpu()
