@@ -26,7 +26,7 @@ parser.add_argument('--gamma', type=float, default=0.5, help='')
 parser.add_argument("--step", type=int, default=100, help="Sets the learning rate to the initial LR decayed by momentum every n epochs, Default: n=10")
 parser.add_argument("--cuda", action="store_false", help="Use cuda?")
 parser.add_argument("--resume", default="", type=str, help="Path to pretrained SISR model (default: none)")
-parser.add_argument('--pretrained', default='../ckpt/VDSR/pretrain.pth', type=str, help='path to pretrained VDSR_SAM (default: none)')
+parser.add_argument('--pretrained', default='../../ckpt/VDSR/pretrain.pth', type=str, help='path to pretrained VDSR_SAM (default: none)')
 parser.add_argument("--start-epoch", default=1, type=int, help="Manual epoch number (useful on restarts)")
 parser.add_argument("--clip", type=float, default=0.4, help="Clipping Gradients. Default=0.4")
 parser.add_argument("--threads", type=int, default=1, help="Number of threads for data loader to use, Default: 1")
@@ -51,7 +51,7 @@ def main():
     cudnn.benchmark = True
 
     print("===> Loading datasets")
-    train_set = TrainSetLoader('../data/train', opt.scale)
+    train_set = TrainSetLoader('../../data/train', opt.scale)
     training_data_loader = DataLoader(dataset=train_set, num_workers=opt.threads, batch_size=opt.batchSize, shuffle=True)
 
     print("===> Building model")
@@ -162,7 +162,7 @@ def train(training_data_loader, optimizer, model, epoch, scheduler):
         psnr_epoch = psnr_epoch + PSNR
     print("===> Epoch[{}]: Loss: {:.3f} PSNR: {:.3f} ".format(epoch, loss_epoch/(iteration+1), psnr_epoch/(iteration+1)))
     save_checkpoint_SAM(model, epoch)
-    # valid('../data/valid', model)
+    # valid('../../data/valid', model)
 
 def valid(Dataset,  model):
     test_set = TrainSetLoader(Dataset, opt.scale)
