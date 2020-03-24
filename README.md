@@ -1,10 +1,34 @@
-# A Stereo Attention Module for Stereo Image Super-Resolution
-Pytorch implementation of "[A Stereo Attention Module for Stereo Image Super-Resolution](https://ieeexplore.ieee.org/document/8998204)", SPL 2020
+# SAM
+***Repository of "A Stereo Attention Module for Stereo Image Super-Resolution". [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8998204">PDF</a>]*** <br>
 
-## Overview
-<img src="https://github.com/XinyiYing/SAM/blob/master/images/architecture.jpg" width="600" height="500" />
+### <img src="https://raw.github.com/YingqianWang/SAM/master/Figs/Thumbnail.jpg" width="600">
+***We proposed a stereo attention module (SAM) to extend arbitrary single image SR methods for stereo image SR.*** <br><br>
 
-Figure 1. An illustration of the stereo attention module.
-## Results
-<img src=https://github.com/XinyiYing/SAM/blob/master/images/compare.jpg>
-Figure 2. Qualitative results achieved by different SISR methods with/without SAMs for 4× SR.
+## Architecture of SAM
+<img src="https://raw.github.com/YingqianWang/SAM/master/Figs/Network.jpg" width="600"><br>
+
+## Visualization of Generated Attention Maps
+<img src="https://raw.github.com/YingqianWang/SAM/master/Figs/AttMap.jpg" width="600"><br>
+
+## Quantitative Results
+<img src="https://raw.github.com/YingqianWang/SAM/master/Figs/Quantitative.jpg" width="800"><br>
+
+## Qualitative Results
+<img src="https://raw.github.com/YingqianWang/SAM/master/Figs/Qualitative.jpg" width="800"><br>
+
+
+
+## Citiation
+***If you find our work helpful, please cite:*** <br><br>
+@article{SAM,<br>
+  title={A Stereo Attention Module for Stereo Image Super-Resolution},<br>
+  author={Ying, Xinyi and Wang, Yingqian and Wang, Longguang and Sheng, Weidong and An, Wei and Guo, Yulan},<br>
+  journal={IEEE Signal Processing Letters},<br>
+  year={2020},<br>
+  publisher={IEEE}<br>
+}<br>
+
+
+## Contact
+You can contact ***Xinyi Ying*** at ***yingxinyi18@nudt.edu.cn*** or contact ***Yingqian Wang*** at ***wangyingqian16@nudt.edu.cn*** for any question about this work. <br>
+
