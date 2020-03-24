@@ -1,7 +1,7 @@
 # SAM
 ***Repository of "A Stereo Attention Module for Stereo Image Super-Resolution". [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8998204">PDF</a>]*** <br>
 
-### <img src="https://raw.github.com/YingqianWang/SAM/master/Figs/Thumbnail.jpg" width="600">
+### <img src="https://raw.github.com/YingqianWang/SAM/master/Figs/Thumbnail.jpg" width="700">
 ***We proposed a stereo attention module (SAM) to extend arbitrary single image SR methods for stereo image SR.*** <br><br>
 
 ## Architecture of SAM
@@ -11,10 +11,10 @@
 <img src="https://raw.github.com/YingqianWang/SAM/master/Figs/AttMap.jpg" width="600"><br>
 
 ## Quantitative Results
-<img src="https://raw.github.com/YingqianWang/SAM/master/Figs/Quantitative.jpg" width="800"><br>
+<img src="https://raw.github.com/YingqianWang/SAM/master/Figs/Quantitative.jpg" width="900"><br>
 
 ## Qualitative Results
-<img src="https://raw.github.com/YingqianWang/SAM/master/Figs/Qualitative.jpg" width="800"><br>
+<img src="https://raw.github.com/YingqianWang/SAM/master/Figs/Qualitative.jpg" width="900"><br>
 
 
 
