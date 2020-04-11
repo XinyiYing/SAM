@@ -27,6 +27,7 @@
 
 
 ## Related Work
+* Non-Local Nested Residual Attention Network for Stereo Image Super-Resolution, *ICASSP 2020*, **[<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9054687" target="_blank">pdf</a>]**
 * Stereoscopic Image Super-Resolution with Stereo Consistent Feature, *AAAI 2020*. **[<a href="https://www.aaai.org/Papers/AAAI/2020GB/AAAI-SongW.10348.pdf">pdf</a>]**
 * Flickr1024: A Large-Scale Dateset for Stereo Image Super-Resolution, *ICCVW 2019*. **[<a href="http://openaccess.thecvf.com/content_ICCVW_2019/papers/LCI/Wang_Flickr1024_A_Large-Scale_Dataset_for_Stereo_Image_Super-Resolution_ICCVW_2019_paper.pdf">pdf</a>]**, **[<a href="https://yingqianwang.github.io/Flickr1024">website</a>]**.
 * Learning Parallax Attention for Stereo Image Super-resolution, *CVPR 2019*. **[<a href="https://arxiv.org/pdf/1903.05784.pdf">pdf</a>]**, **[<a href="https://github.com/LongguangWang/PASSRnet">code</a>]**.
