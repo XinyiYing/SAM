@@ -17,13 +17,13 @@
 ## Citiation
 ***If you find our work helpful, please cite:*** <br><br>
 ```
-@article{SAM,<br>
-  title={A Stereo Attention Module for Stereo Image Super-Resolution},<br>
-  author={Ying, Xinyi and Wang, Yingqian and Wang, Longguang and Sheng, Weidong and An, Wei and Guo, Yulan},<br>
-  journal={IEEE Signal Processing Letters},<br>
-  year={2020},<br>
-  publisher={IEEE}<br>
-}<br>
+@article{SAM,
+  title={A Stereo Attention Module for Stereo Image Super-Resolution},
+  author={Ying, Xinyi and Wang, Yingqian and Wang, Longguang and Sheng, Weidong and An, Wei and Guo, Yulan},
+  journal={IEEE Signal Processing Letters},
+  year={2020},
+  publisher={IEEE}
+}
 ```
 
 ## Related Work
