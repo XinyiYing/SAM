@@ -1,6 +1,5 @@
 # SAM
 ***We proposed a stereo attention module (SAM) to extend arbitrary single image SR methods for stereo image SR. [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8998204">PDF</a>]*** <br><br>
-***Original Repository is at https://github.com/XinyiYing/SAM, which may be updated now.***
 
 ## Architecture of SAM
 <img src="https://raw.github.com/YingqianWang/SAM/master/Figs/Network.jpg" width="600"><br>
@@ -17,6 +16,7 @@
 
 ## Citiation
 ***If you find our work helpful, please cite:*** <br><br>
+```
 @article{SAM,<br>
   title={A Stereo Attention Module for Stereo Image Super-Resolution},<br>
   author={Ying, Xinyi and Wang, Yingqian and Wang, Longguang and Sheng, Weidong and An, Wei and Guo, Yulan},<br>
@@ -24,7 +24,7 @@
   year={2020},<br>
   publisher={IEEE}<br>
 }<br>
-
+```
 
 ## Related Work
 * Non-Local Nested Residual Attention Network for Stereo Image Super-Resolution, *ICASSP 2020*, **[<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9054687" target="_blank">pdf</a>]**
