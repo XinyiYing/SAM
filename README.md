@@ -25,7 +25,7 @@
   journal={IEEE Signal Processing Letters},
   year={2020},
   volume={27},
-  pages={496--500},
+  pages={496-500},
   publisher={IEEE}
 }
 ```
