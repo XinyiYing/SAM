@@ -1,5 +1,7 @@
 # SAM
-***We proposed a stereo attention module (SAM) to extend arbitrary single image SR methods for stereo image SR. [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8998204">PDF</a>]*** <br><br>
+***We proposed a stereo attention module (SAM) to extend arbitrary single image SR methods for stereo image SR. [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8998204">PDF</a>]*** <br>
+
+***We release the demo of SRResNet+SAM in a new branch. [<a href="https://github.com/XinyiYing/SAM/tree/SRResNet_SAM">Code</a>]*** <br><br>
 
 ## Architecture of SAM
 <img src="https://raw.github.com/YingqianWang/SAM/master/Figs/Network.jpg" width="600"><br>
