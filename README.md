@@ -24,6 +24,8 @@
   author={Ying, Xinyi and Wang, Yingqian and Wang, Longguang and Sheng, Weidong and An, Wei and Guo, Yulan},
   journal={IEEE Signal Processing Letters},
   year={2020},
+  volume={27},
+  pages={496--500},
   publisher={IEEE}
 }
 ```
