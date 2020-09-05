@@ -19,7 +19,7 @@ parser.add_argument("--cuda", action="store_false", help="use cuda?")
 parser.add_argument("--scale", type=str, default=4, help="upscale factor")
 parser.add_argument('--testset_dir', type=str, default='../data/test')
 parser.add_argument('--dataset_list', type=str, default=[ 'KITTI2012',  'KITTI2015', 'Middlebury'])
-parser.add_argument("--gpus", default="1", type=str, help="gpu ids (default: 0)")
+parser.add_argument("--gpus", default="0", type=str, help="gpu ids (default: 0)")
 
 
 opt = parser.parse_args()
