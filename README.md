@@ -4,16 +4,16 @@
 ***We release the demo of SRResNet+SAM in a new branch. [<a href="https://github.com/XinyiYing/SAM/tree/SRResNet_SAM">Code</a>]*** <br><br>
 
 ## Architecture of SAM
-<img src="https://raw.github.com/YingqianWang/SAM/master/Figs/Network.jpg" width="600"><br>
+<img src="https://raw.github.com/XinyiYing/SAM/master/Figs/Network.jpg" width="600"><br>
 
 ## Visualization of Generated Attention Maps
-<img src="https://raw.github.com/YingqianWang/SAM/master/Figs/AttMap.jpg" width="600"><br>
+<img src="https://raw.github.com/XinyiYing/SAM/master/Figs/AttMap.jpg" width="600"><br>
 
 ## Quantitative Results
-<img src="https://raw.github.com/YingqianWang/SAM/master/Figs/Quantitative.jpg" width="1000"><br>
+<img src="https://raw.github.com/XinyiYing/SAM/master/Figs/Quantitative.jpg" width="1000"><br>
 
 ## Qualitative Results
-<img src="https://raw.github.com/YingqianWang/SAM/master/Figs/Qualitative.jpg" width="1000"><br>
+<img src="https://raw.github.com/XinyiYing/SAM/master/Figs/Qualitative.jpg" width="1000"><br>
 
 
 ## Citiation
